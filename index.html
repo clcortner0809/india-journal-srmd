@@ -1,3 +1,574 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:8af3e00f60cbd0871d702367e30b2b8d2ef5de856cd1d6314b31b681bc48cb8d
-size 112379263
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth font-sans"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRJMD India 2026 Field Journal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&amp;family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Courier+Prime&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        srmdRed: '#7A1E31',
+                        srmdGold: '#C5A059',
+                        srmdCream: '#FCF9F2',
+                        srmdCharcoal: '#2D2325',
+                        retroBg: '#F5EFE6',
+                        retroText: '#2B2523',
+                        retroAccent: '#C85A32'
+                    },
+                    fontFamily: {
+                        serif: ['Lora', 'Georgia', 'serif'],
+                        cinzel: ['Cinzel', 'serif'],
+                        mono: ['Courier Prime', 'monospace'],
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Adaptive picture layout rules - guarantees zero cropping for both portrait and landscape uploads */
+        .media-slot-card {
+            border: 1px solid #E6DFD3;
+            background: #FAF6F0;
+            padding: 12px;
+            border-radius: 6px;
+            position: relative;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+        }
+        .media-slot-card:hover {
+            border-color: #C5A059;
+            box-shadow: 0 6px 16px rgba(122, 30, 49, 0.06);
+        }
+        .image-canvas-placeholder {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16/10;
+            background: #FFFFFF;
+            border-radius: 4px;
+            display: block;
+        }
+        .user-adaptive-photo {
+            width: 100%;
+            max-height: 550px;
+            height: auto;
+            object-fit: contain;
+            background: #FAF6F0;
+            border-radius: 4px;
+            display: block;
+            margin: 0 auto;
+        }
+        .editable-active:focus {
+            outline: 2px dashed #C5A059;
+            background-color: rgba(197, 160, 89, 0.12);
+            padding: 4px;
+            border-radius: 4px;
+        }
+        .gg-pullquote-accent {
+            border-left: 4px solid #7A1E31;
+            padding-left: 18px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #4A4543;
+        }
+        .gg-dropcap-format::first-letter {
+            font-family: 'Cinzel', serif;
+            font-size: 3.2rem;
+            float: left;
+            margin-right: 10px;
+            color: #7A1E31;
+            line-height: 0.9;
+            font-weight: 700;
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Inter, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:Courier Prime, monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.fixed{position:fixed}.sticky{position:sticky}.bottom-6{bottom:1.5rem}.right-6{right:1.5rem}.top-0{top:0px}.z-40{z-index:40}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mt-2{margin-top:0.5rem}.mt-6{margin-top:1.5rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.w-10{width:2.5rem}.w-full{width:100%}.max-w-\[1000px\]{max-width:1000px}.max-w-xl{max-width:36rem}.shrink-0{flex-shrink:0}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.space-y-14 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(3.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(3.5rem * var(--tw-space-y-reverse))}.scroll-smooth{scroll-behavior:smooth}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-srmdGold{--tw-border-opacity:1;border-color:rgb(197 160 89 / var(--tw-border-opacity, 1))}.border-stone-100{--tw-border-opacity:1;border-color:rgb(245 245 244 / var(--tw-border-opacity, 1))}.border-stone-200{--tw-border-opacity:1;border-color:rgb(231 229 228 / var(--tw-border-opacity, 1))}.border-stone-200\/60{border-color:rgb(231 229 228 / 0.6)}.border-white{--tw-border-opacity:1;border-color:rgb(255 255 255 / var(--tw-border-opacity, 1))}.bg-amber-600{--tw-bg-opacity:1;background-color:rgb(217 119 6 / var(--tw-bg-opacity, 1))}.bg-emerald-700{--tw-bg-opacity:1;background-color:rgb(4 120 87 / var(--tw-bg-opacity, 1))}.bg-retroBg\/40{background-color:rgb(245 239 230 / 0.4)}.bg-srmdCream{--tw-bg-opacity:1;background-color:rgb(252 249 242 / var(--tw-bg-opacity, 1))}.bg-srmdRed{--tw-bg-opacity:1;background-color:rgb(122 30 49 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.p-4{padding:1rem}.p-5{padding:1.25rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-8{padding-top:2rem;padding-bottom:2rem}.pb-4{padding-bottom:1rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.font-mono{font-family:Courier Prime, monospace}.font-sans{font-family:Inter, sans-serif}.font-serif{font-family:Lora, Georgia, serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-\[9px\]{font-size:9px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-widest{letter-spacing:0.1em}.text-retroAccent{--tw-text-opacity:1;color:rgb(200 90 50 / var(--tw-text-opacity, 1))}.text-srmdCharcoal{--tw-text-opacity:1;color:rgb(45 35 37 / var(--tw-text-opacity, 1))}.text-stone-400{--tw-text-opacity:1;color:rgb(168 162 158 / var(--tw-text-opacity, 1))}.text-stone-500{--tw-text-opacity:1;color:rgb(120 113 108 / var(--tw-text-opacity, 1))}.text-stone-700{--tw-text-opacity:1;color:rgb(68 64 60 / var(--tw-text-opacity, 1))}.text-stone-800{--tw-text-opacity:1;color:rgb(41 37 36 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.selection\:bg-srmdGold\/30 *::selection{background-color:rgb(197 160 89 / 0.3)}.selection\:bg-srmdGold\/30::selection{background-color:rgb(197 160 89 / 0.3)}.hover\:bg-emerald-800:hover{--tw-bg-opacity:1;background-color:rgb(6 95 70 / var(--tw-bg-opacity, 1))}.hover\:bg-red-950:hover{--tw-bg-opacity:1;background-color:rgb(69 10 10 / var(--tw-bg-opacity, 1))}@media (min-width: 640px){.sm\:col-span-2{grid-column:span 2 / span 2}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}}@media (min-width: 768px){.md\:p-10{padding:2.5rem}.md\:p-8{padding:2rem}.md\:py-12{padding-top:3rem;padding-bottom:3rem}.md\:text-3xl{font-size:1.875rem;line-height:2.25rem}.md\:text-base{font-size:1rem;line-height:1.5rem}}</style></head>
+<body class="bg-srmdCream text-srmdCharcoal antialiased selection:bg-srmdGold/30 py-8 md:py-12">
+
+    
+
+    
+
+    
+
+    <main class="max-w-[1000px] mx-auto p-4 md:p-8">
+        <section id="pane-column-journal" class="bg-white p-5 md:p-10 rounded-lg shadow-sm border border-stone-200">
+            
+            <div class="flex flex-wrap justify-center items-center gap-3 text-xs font-sans font-bold text-retroAccent tracking-widest uppercase mb-4 border-b border-stone-100 pb-4">
+                <span>📂 UC Berkeley Haas IBD Field Journal</span>
+                <span>•</span>
+                <span>⏱️ 15 Minute Read</span>
+                <span>•</span>
+                <span>📍 Dharampur, Gujarat</span>
+            </div>
+
+            <div class="text-center max-w-xl mx-auto mb-10">
+                <h3 class="font-sans font-extrabold text-2xl md:text-3xl text-stone-800 tracking-tight leading-tight mb-3 text-content-target">Mumbai to South Gujarat: The Student Narrative Diary</h3>
+                <p class="font-serif italic text-sm text-stone-500 text-content-target">Srimad Rajchandra Jivamaitridham Project Field Engagement Deployment</p>
+            </div>
+
+            <div class="bg-retroBg/40 p-4 rounded-lg flex items-center gap-3 border border-stone-200/60 mb-12">
+                <div class="w-10 h-10 rounded-full bg-srmdRed text-white flex items-center justify-center font-bold text-lg shrink-0">🌏</div>
+                <div>
+                    <h5 class="font-sans font-bold text-xs text-stone-800">Authors: Patricia, Ricardo, Chris &amp; Dayeon</h5>
+                    <p class="font-serif text-[11px] text-stone-500 italic">Direct on-site chronological field journal entries.</p>
+                </div>
+            </div>
+
+            <div class="space-y-14 font-serif text-stone-700 text-sm md:text-base leading-relaxed">
+
+                <section class="journal-node-box">
+                    <div class="font-mono text-xs text-retroAccent font-bold mb-2">Saturday May 16th</div>
+                    <p class="gg-dropcap-format text-content-target mb-4">
+                        Three of us (Ricardo, Chris, and Patricia) arrived in Mumbai on Saturday after 20 hours of travel! We left our luggage at the hotel and started exploring the city.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(1)">
+                            <div id="slot-container-1"><img src="images/photo-1.jpg" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[10px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">Sat Exploration Entry Cues</span></span>
+                        </div>
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(2)">
+                            <div id="slot-container-2"><img src="images/photo-2.png" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[10px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">Finding all the historic structures of Mumbai!</span></span>
+                        </div>
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(3)">
+                            <div id="slot-container-3"><img src="images/photo-3.png" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[10px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">The wild Tuk Tuk chase!</span></span>
+                        </div>
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(4)">
+                            <div id="slot-container-4"><img src="images/photo-4.png" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[10px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">Escaping the heat for our first meal!</span></span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="journal-node-box border-t border-stone-100 pt-8">
+                    <div class="font-mono text-xs text-retroAccent font-bold mb-2">Sunday May 17th</div>
+                    <p class="text-content-target mb-4">
+                        On Sunday, Dayeon arrived and we did some more sightseeing, including some architectural landmarks such as the Chhatrapati Shivaji Museum and the Gateway of India. Mumbai has a fascinating history and its buildings reflect Indo-Saracenic architecture, a revivalist style used by British architects in late-19th-century India that blends Western Gothic and Neoclassical layouts with native Indo-Islamic and Hindu decorative elements.
+                    </p>
+                    <p class="text-content-target mb-4">
+                        At night, we met up with some Haas classmates from Mumbai and had great contemporary Indian food!
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(5)">
+                            <div id="slot-container-5"><img src="images/photo-5.jpg" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[10px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">Architectural Landmarks - CST Train Station.</span></span>
+                        </div>
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(6)">
+                            <div id="slot-container-6"><img src="images/photo-6.png" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[10px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">Meeting up with our fellow Haasies visiting their homes!</span></span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="journal-node-box border-t border-stone-100 pt-8">
+                    <div class="font-mono text-xs text-retroAccent font-bold mb-2">Monday May 18th</div>
+                    <p class="text-content-target mb-4">
+                        On Monday, we had the opportunity to explore the city more deeply and visited Chhatrapati Shivaji Maharaj Terminus, a UNESCO World Heritage Site. Later that evening, we met with Atmarpit Saloni and SRMD volunteer Jinal over dinner to kick off our in-country project.
+                    </p>
+                    <div class="gg-pullquote-accent text-content-target">
+                        "Atmarpits are unmarried devotees who have committed to a lifelong path of celibacy, sadhana, and seva under the guidance of Pujya Gurudevshri. Jinal, while working full-time professionally, also volunteers her time to serve the community through seva."
+                    </div>
+                    <p class="text-content-target mb-4">
+                        We learned that there are approximately 120 Atmarpits, and other parts of the community consist of individuals balancing full-time careers while remaining deeply devoted to service and spiritual practice.
+                    </p>
+                    <p class="text-content-target mb-4">
+                        During our first meeting, we discussed our plans for the next two weeks, including the individuals and initiatives we would be engaging with throughout our stay at the ashram. Saloni also briefly walked us through how life in the ashram would look like and what we should be mindful of.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(7)">
+                            <div id="slot-container-7"><img src="images/photo-7.jpg" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[10px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">More sight seeing before our first client meeting!</span></span>
+                        </div>
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(8)">
+                            <div id="slot-container-8"><img src="images/photo-8.jpg" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[10px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">Seva Alignment Meeting: presenting to Dharmeshbhai!</span></span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="journal-node-box border-t border-stone-100 pt-8">
+                    <div class="font-mono text-xs text-retroAccent font-bold mb-2">Tuesday May 19th</div>
+                    <p class="text-content-target mb-4">
+                        On Tuesday, we met with Dharmeshbhai (Director of the JMD Project) and presented our work at the SRMD Mumbai Office. It was a short meeting but we were able to get very useful feedback from him. Later that day, we moved from Mumbai to Dharampur. It was a long 6 hour drive so by the time we arrived at the ashram and checked in, it was 10pm so we had to call it a day.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(9)">
+                            <div id="slot-container-9"><img src="images/photo-9.jpg" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[10px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">We have arrived at the Ashram, time to check in...</span></span>
+                        </div>
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(10)">
+                            <div id="slot-container-10"><img src="images/photo-10.jpg" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[10px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">The Ashram temple lit up for our arrival!</span></span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="journal-node-box border-t border-stone-100 pt-8">
+                    <div class="font-mono text-xs text-retroAccent font-bold mb-2">Wednesday May 20th</div>
+                    <p class="text-content-target mb-4">
+                        Wednesday was a tour day visiting different facilities that are operated by SRMD under the Shrimad Rajchandra Love and Care mission. Shrimad Rajchandra Love and Care is an initiative to provide seva activities encompassing health, education, animal welfare, and community development, ensuring holistic and sustainable development in one of the poorest areas of South Gujarat. We visited SRLC Hospital. The hospital has state of the art equipment that serves local Gujarati populations and provides medical care for free. They even had a children's hospital and Aquatic Therapy.
+                    </p>
+                    <p class="text-content-target mb-4">
+                        Later that day, we had time to experience aerial yoga. We immersed ourselves in Yoga as a tool for self realization, one of the main objectives of the SRMD Mission Dharampur. We even took a photo with Gurudev after the yoga class!
+                    </p>
+                    <p class="text-content-target mb-4">
+                        After our yoga session we had a dinner meeting with Atmarpit Amee, a former Spanish teacher that grew up in London. She helped us get a better understanding of the culture surrounding Atmarpits. Some of them are what is referred to as Non Resident Indians, people of Indian heritage that grew up in other countries. Her experiences coming to visit the Ashram with her family when she was growing up set the foundation for her later commitment to the Shrimad Rajchandra Mission in Dharampur.
+                    </p>
+                    <p class="text-content-target mb-4">
+                        In the evening, we participated in Arti, which is a religious ritual held in the main temple. We got to see what the Jain ceremonies looked like! They include the burning of materials that create smoke and smells, as well as the ringing of loud bells and drums. Built from the same white marble as Taj Mahal, the temple was intricate and stunning and had a nice view of the entire ashram.
+                    </p>
+                    <p class="text-content-target mb-4">
+                        After that, we did an ashram tour starting from the temple with Uncle Nitin. We learned about the construction of the temple, the tales about Jainism, and what each facility of the ashram was designed for. We also got a better understood housing model for the ashram. There are permanent residential housing for the staff, Atmarpits and the retired along with housing for those who are staying in the ashram but not permanently.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(11)">
+                            <div id="slot-container-11"><img src="images/photo-11.png" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[9px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">Ricardo trying out the robotic hand on our tour of SRMD's hospital built 3 years ago.</span></span>
+                        </div>
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(12)">
+                            <div id="slot-container-12"><img src="images/photo-12.jpg" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[9px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">Aerial Yoga Session</span></span>
+                        </div>
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(13)">
+                            <div id="slot-container-13"><img src="images/photo-13.jpg" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[9px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">Main Temple Architecture for Aarti</span></span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="journal-node-box border-t border-stone-100 pt-8">
+                    <div class="font-mono text-xs text-retroAccent font-bold mb-2">Thursday May 21st</div>
+                    <p class="text-content-target mb-4">
+                        Thursday was another day spent touring SRLC facilities. We visited SRET College and several schools supported by the organization. The science college was particularly impressive, providing high-quality education to local students who may not otherwise have had access to such opportunities. Although it was summer break and we were unable to meet the students directly, we learned that a significant number of the students are women.
+                    </p>
+                    <p class="text-content-target mb-4">
+                        We then visited the school facilities, where a variety of vocational training programs were offered, including electrician training, solar panel installation, data entry, and mobile phone repair. All through the grace and vision of Gurudev, it was clear that SRMD’s mission is serving the local community in meaningful and impactful ways.
+                    </p>
+                    <p class="text-content-target mb-4">
+                        In the afternoon, we met with Virali, the Director of IT Services. It was nearly 110 degrees outside, and while navigating the massive ashram grounds, we got lost along the way. By the time we arrived to meet Viraliji, we were visibly exhausted, and she was concerned by how drained we looked. She also advised us not to visit JMD during the afternoon, since the construction site currently has no fans or air conditioning. Taking her advice, we decided to cancel the afternoon tours and postpone the visit until later in the evening when the weather had cooled down.
+                    </p>
+                    <p class="text-content-target mb-4">
+                        Later that day, we finally visited the JMD construction site, where our project is focused on. We saw the 1000 cows and two camels already at the facility. The animal hospital and the shelters/experience center were still under construction. We met with Piyushbhai who showed us around. He is one of the team leads for the JMD project.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(14)">
+                            <div id="slot-container-14"><img src="images/photo-14.jpg" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[9px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">Classroom at SRMD's science college.</span></span>
+                        </div>
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(15)">
+                            <div id="slot-container-15"><img src="images/photo-15.jpg" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[9px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">Cow Shelters that will support 1,500 cows.</span></span>
+                        </div>
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(16)">
+                            <div id="slot-container-16"><img src="images/photo-16.jpg" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[9px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">JMD under construction.&nbsp;</span></span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="journal-node-box border-t border-stone-100 pt-8">
+                    <div class="font-mono text-xs text-retroAccent font-bold mb-2">Friday May 22nd ~ Sunday May 24th New Delhi</div>
+                    <p class="text-content-target mb-4">
+                        Over the weekend, we moved from the ashram to New Delhi to travel! We saw many of the historic landmarks around and outside of Delhi. We spent Saturday touring around Lodhi garden, the Red Fort, and Humayun's Tomb. We finished off the day with a team dinner and prepped ourselves for a 2:30 bus time to go see the Taj Mahal. On Sunday we made the 6 hour round trip to visit the Taj Mahal and Agra Fort. An exhausting day that was well worth it. Though we desperately needed to sleep, we forced ourselves out to have some of the best butter chicken we’ve ever had, as we knew the next day we would be heading back to a life without meat, onions, garlic, and even potatoes!
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(17)">
+                            <div id="slot-container-17"><img src="images/photo-17.jpg" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[9px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">Hamayun's Tomb in Dehli</span></span>
+                        </div>
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(18)">
+                            <div id="slot-container-18"><img src="images/photo-18.jpg" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[9px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">Visit to the Red Fort</span></span>
+                        </div>
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(19)">
+                            <div id="slot-container-19"><img src="images/photo-19.jpg" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[9px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">Visiting the Taj Mahal!</span></span>
+                        </div>
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(20)">
+                            <div id="slot-container-20"><img src="images/photo-20.jpg" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[9px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">Agra Fort Assessments</span></span>
+                        </div>
+                        <div class="media-slot-card text-center sm:col-span-2 flex flex-col justify-between" onclick="dispatchUploaderLink(21)">
+                            <div id="slot-container-21" class="w-full"><img src="images/photo-21.jpg" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[9px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">Another image of the Taj because it's just so stunning.</span></span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="journal-node-box border-t border-stone-100 pt-8">
+                    <div class="font-mono text-xs text-retroAccent font-bold mb-2">Monday May 25th</div>
+                    <p class="text-content-target mb-4">
+                        We made the journey back to Dharampur, but missed our early morning flight (we went to the wrong terminal and it turned out each terminal is 20 minutes away from each other!!!). We pulled out our laptops and worked at the airport gates and in the bumpy car rides to move the financial model closer to a finished product before our next meeting with Viraliji (the IT contact).
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(22)">
+                            <div id="slot-container-22"><img src="images/photo-22.jpg" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[10px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">We took our work mobile today as we worked from airport lounges and terminal gates.</span></span>
+                        </div>
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(23)">
+                            <div id="slot-container-23"><img src="images/photo-23.jpg" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[10px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">We arrived back in Dharampur just in time for sunset.</span></span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="journal-node-box border-t border-stone-100 pt-8">
+                    <div class="font-mono text-xs text-retroAccent font-bold mb-2">Tuesday May 26th</div>
+                    <p class="text-content-target mb-4">
+                        We are back at the ashram and we had lots of meetings scheduled for the day. This was the most productive day! At 10am we met with Piyushbhai again who helped outline the four different factions of the JMD project and the current labor structure that supports the project. He was also incredibly helpful in connecting us with the people directly involved in the JMD initiative — the individuals we ideally should have been collaborating with from the beginning of the project. He also provided us with his driver to let us get to the JMD facility later that day because we didn’t have a driver to get there!
+                    </p>
+                    <p class="text-content-target mb-4">
+                        At 3pm we met with Disha, who we have spoken with multiple times via zoom in the past six months. She is responsible for registration for the Ashram. From this meeting we realized that most of our target audience would be the non-repeat visitors who come to the Ashram (those who are not there for spiritual reasons). Additionally we established a plan that would build the JMD excursion into existing activity packages for groups and corporates that come to the Ashram. We then headed over to the JMD site to meet with vets at both the small and large animal clinics to conduct interviews about the existing educational training they do in partnership with the University of Edinburgh and Glasgow.
+                    </p>
+                    <p class="text-content-target mb-4">
+                        We had a particularly insightful meeting with a veterinarian that works with the small animals in the medical clinic that will be replaced by the larger animal hospital that is being constructed as part of JMD. He is originally from New Delhi and helped us understand the contexts of animals that will be served as well as the incentives for veterinarians who would attend the courses offered by JMD. He confirmed for us that the prices we had suggested for veterinarian courses were competitive for the domestic Indian market, and that there is a growing market for veterinarians that want to take graduate diploma programs as opposed to pursuing a full masters degree in veterinarian science. Overall, this meeting suggested that veterinary education programs might potentially be the most valuable source of revenue for JMD.
+                    </p>
+                    <p class="text-content-target mb-4">
+                        After a brief dinner break, we presented our latest financial model to the head of IT, Viraliji. She confirmed that she would be able to host a website that offers an interactive dashboard version of our excel model. We also had a zoom check in with one of our project’s point of contacts Neil, who was in the states. With Neil we had the opportunity to share candid feedback of the things that had worked well and not so well in the project.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(24)">
+                            <div id="slot-container-24"><img src="images/photo-24.jpg" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[9px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">Back at the ashram means back to typical Jain food!</span></span>
+                        </div>
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(25)">
+                            <div id="slot-container-25"><img src="images/photo-25.jpg" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[9px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">We visited the Vet Clinic to see the types of medicine they offer to both small and large animals.</span></span>
+                        </div>
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(26)">
+                            <div id="slot-container-26"><img src="images/photo-26.jpg" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[9px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">We sat down with a few vets to ask further questions.</span></span>
+                        </div>
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(27)">
+                            <div id="slot-container-27"><img src="images/photo-27.jpg" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[9px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">We even got to see some bunnies!</span></span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="journal-node-box border-t border-stone-100 pt-8">
+                    <div class="font-mono text-xs text-retroAccent font-bold mb-2">Wednesday May 27th</div>
+                    <p class="text-content-target mb-4">
+                        As the project deadline approached, we began finalizing our work and preparing our deliverables. We scheduled several last-minute meetings with individuals connected to us through Piyushbhai, whose introductions proved extremely valuable for the project.
+                    </p>
+                    <p class="text-content-target mb-4">
+                        In particular, we met with the team in charge of the Ahimsa Awareness Center, which is one of the most important and unique aspects of JMD. We had a particularly fruitful discussion surrounding pricing and packaging for the Ashram. In particular, we discussed how to place JMD within India’s broader attraction industry, and how capacity for visitors might be a crucial factor in determining pricing. The team mentioned a desire to explore price sensitivity for visitors and how it might impact visitation numbers. They seemed to believe that we were pricing the attractions too low, but our research suggests that their expectations for prices would be too high.
+                    </p>
+                    <p class="text-content-target mb-4">
+                        Our point of contact’s trip to the ashram was postponed to the following day, so we instead held a virtual meeting with her to continue our discussions.
+                    </p>
+                    <p class="text-content-target mb-4">
+                        We also adjusted our schedule and decided to move to Mumbai the next day after learning that most of the key stakeholders would not be reaching the Ashram until the following Monday and would be staying in Mumbai. Unfortunately, Saloni — our key contact throughout the project — would be traveling to the Ashram finally just as we were about to leave. With her, we decided she would join the conversation virtually so we could present in person to the leadership team.
+                    </p>
+                    <p class="text-content-target mb-4">
+                        We then met virtually with Manoch Bhai, a Vet working for the clinics in Mumbai who was responsible for leading the veterinary education portion of the project. We verified our assumptions with him and gained deeper insights that helped us justify the cost of higher priced diploma and CPD programs in India. This information, paired with what we learned from the Vet the day before, helped finalize the education packages we would roll out.
+                    </p>
+                    <p class="text-content-target mb-4">
+                        In the evening, we participated in a sound bath session, which was an incredibly mind-blowing experience that helped release much of the stress and tension we had built up over the past few days. We also spent some time in the meditation room afterward. Slowly, a sense of inner peace was beginning to emerge.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(28)">
+                            <div id="slot-container-28"><img src="images/photo-28.jpg" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[9px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">We continue to build out the financial model and start to developing the interactive dashboard.</span></span>
+                        </div>
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(29)">
+                            <div id="slot-container-29"><img src="images/photo-29.jpg" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[9px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">A view of one of the major buildings in the Ashram. You can see the temple peeping in the back.</span></span>
+                        </div>
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(30)">
+                            <div id="slot-container-30"><img src="images/photo-30.jpg" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[9px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">We had a sound bath on our final night.</span></span>
+                        </div>
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(31)">
+                            <div id="slot-container-31"><img src="images/photo-31.jpg" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[9px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">And explored the many meditation halls on the top floor.</span></span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="journal-node-box border-t border-stone-100 pt-8">
+                    <div class="font-mono text-xs text-retroAccent font-bold mb-2">Thursday May 28th</div>
+                    <p class="text-content-target mb-4">
+                        We left the ashram at 6am to get back to Mumbai. It was another 5 hours on the bumpy road. Back in Mumbai, a classmate invited us to his home over lunch. Back to potatoes! We had the best meal ever!
+                    </p>
+                    <p class="text-content-target mb-4">
+                        Our final presentation with Dharmeshbhai was scheduled for 7pm in Mumbai, so we finalized our project before the presentation, working in the notes we took from our conversation with the Experience Center Team, Manoch Bhai, and the ashram visitors we spoke with.
+                    </p>
+                    <p class="text-content-target mb-4">
+                        We headed to SRMD’s Mumbai office location to present to the JMD team. The presentation was such a success that we found ourselves being quickly hustled into vans to go meet the Guru before he headed off to the Ashram. Thank god our fellow classmate who spoke Hindi came along and understood what they were saying, otherwise we would have assumed we were being kidnapped! According to our friends, the team thought our presentation and findings would help the organization immensely, and that we should meet Gurudev because of that. The Guru even shook hands with Chris. Quite a wild last two hours to wrap out the project.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(32)">
+                            <div id="slot-container-32"><img src="images/photo-32.jpg" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[9px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">We took a picture with the the JMD team upon presenting our closing thoughts.</span></span>
+                        </div>
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(33)">
+                            <div id="slot-container-33"><img src="images/photo-33.jpg" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[9px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">Our meeting with Gurudev, right before he hopped on his train.</span></span>
+                        </div>
+                        <div class="media-slot-card text-center" onclick="dispatchUploaderLink(34)">
+                            <div id="slot-container-34"><img src="images/photo-34.jpg" class="user-adaptive-photo" alt="Journal Imagery Content"></div>
+                            <span class="font-mono text-[9px] text-stone-400 mt-2 block text-content-target"><span style="background-color: rgb(250, 246, 240);">Team Celebration after the final presentation.</span></span>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </section>
+    </main>
+
+    <script>
+        let editStateActive = false;
+        let pendingUploaderTargetSlotId = null;
+
+        function toggleLiveEditingMode() {
+            editStateActive = !editStateActive;
+            const contentTargets = document.querySelectorAll('.text-content-target');
+            const elementButton = document.getElementById('editor-trigger');
+            const elementEmoji = document.getElementById('editor-state-emoji');
+            const elementLabel = document.getElementById('editor-state-label');
+            const elementBanner = document.getElementById('live-editor-banner');
+            const elementExport = document.getElementById('download-trigger');
+
+            if (editStateActive) {
+                contentTargets.forEach(el => {
+                    el.setAttribute('contenteditable', 'true');
+                    el.classList.add('editable-active');
+                });
+                elementButton.classList.replace('bg-srmdRed', 'bg-amber-600');
+                elementEmoji.innerHTML = "&#9998;";
+                elementLabel.innerText = "Disable Live Editor";
+                elementBanner.classList.remove('hidden');
+                elementExport.classList.remove('hidden');
+            } else {
+                contentTargets.forEach(el => {
+                    el.removeAttribute('contenteditable');
+                    el.classList.remove('editable-active');
+                });
+                elementButton.classList.replace('bg-amber-600', 'bg-srmdRed');
+                elementEmoji.innerHTML = "&#128295;";
+                elementLabel.innerText = "Activate Live Editor";
+                elementBanner.classList.add('hidden');
+                elementExport.classList.add('hidden');
+            }
+        }
+
+        function dispatchUploaderLink(id) {
+            if (!editStateActive) return;
+            pendingUploaderTargetSlotId = id;
+            document.getElementById('photo-file-uploader').click();
+        }
+
+        function processLocalPhotoUpload(event) {
+            const selectedFile = event.target.files[0];
+            if (!selectedFile || !pendingUploaderTargetSlotId) return;
+
+            const fileStreamReader = new FileReader();
+            fileStreamReader.onload = function(e) {
+                const embeddedDataUrl = e.target.result;
+                injectAdaptiveImageFrame(`slot-container-${pendingUploaderTargetSlotId}`, embeddedDataUrl);
+            };
+            fileStreamReader.readAsDataURL(selectedFile);
+        }
+
+        function injectAdaptiveImageFrame(targetContainerId, sourceDataString) {
+            const domWrapperElement = document.getElementById(targetContainerId);
+            if (!domWrapperElement) return;
+            domWrapperElement.innerHTML = `<img src="${sourceDataString}" class="user-adaptive-photo" alt="Journal Imagery Content">`;
+        }
+
+        function exportSerializedHTML() {
+            if (editStateActive) toggleLiveEditingMode();
+
+            const masterNodeClone = document.documentElement.cloneNode(true);
+            masterNodeClone.querySelector('#editor-trigger')?.parentElement?.remove();
+            masterNodeClone.querySelector('#photo-file-uploader')?.remove();
+            masterNodeClone.querySelector('#live-editor-banner')?.remove();
+
+            const fullyCompiledDocumentString = '<!DOCTYPE html>\n' + masterNodeClone.outerHTML;
+            const dataBlobInstance = new Blob([fullyCompiledDocumentString], { type: 'text/html' });
+            
+            const operationalAnchor = document.createElement('a');
+            operationalAnchor.href = URL.createObjectURL(dataBlobInstance);
+            operationalAnchor.download = 'jivamaitridham_field_journal_only.html';
+            document.body.appendChild(operationalAnchor);
+            operationalAnchor.click();
+            document.body.removeChild(operationalAnchor);
+
+            toggleLiveEditingMode();
+        }
+
+        function buildDynamicBaselineSketches() {
+            const retrieveContext = (id) => {
+                const canvasNodeElement = document.getElementById(id);
+                if (!canvasNodeElement) return null;
+                const canvasRenderContext2D = canvasNodeElement.getContext('2d');
+                canvasNodeElement.width = 400;
+                canvasNodeElement.height = 240;
+                return canvasRenderContext2D;
+            };
+
+            const executeBaseFill = (ctx, hexColorStart, hexColorEnd) => {
+                const verticalLinearGradient = ctx.createLinearGradient(0, 0, 0, 240);
+                verticalLinearGradient.addColorStop(0, hexColorStart);
+                verticalLinearGradient.addColorStop(1, hexColorEnd);
+                ctx.fillStyle = verticalLinearGradient;
+                ctx.fillRect(0, 0, 400, 240);
+            };
+
+            const renderTextIndicator = (ctx, captionText) => {
+                ctx.font = 'bold 12px monospace';
+                ctx.fillStyle = 'rgba(45, 35, 37, 0.65)';
+                ctx.textAlign = 'center';
+                ctx.fillText(captionText, 200, 125);
+            };
+
+            let ctx = retrieveContext('canvas-node-1'); if(ctx) { executeBaseFill(ctx, '#FFEAD2', '#FFD09B'); renderTextIndicator(ctx, "Sat: Mumbai Exploration ✈️"); }
+            ctx = retrieveContext('canvas-node-2'); if(ctx) { executeBaseFill(ctx, '#EAF2F8', '#D4E6F1'); renderTextIndicator(ctx, "Sat: Structural Relief Forms"); }
+            ctx = retrieveContext('canvas-node-3'); if(ctx) { executeBaseFill(ctx, '#FCF3CF', '#F9E79F'); renderTextIndicator(ctx, "Sat: Mumbai Traffic Grid"); }
+            ctx = retrieveContext('canvas-node-4'); if(ctx) { executeBaseFill(ctx, '#EDBB99', '#E59866'); renderTextIndicator(ctx, "Sat: Urban Backdrops"); }
+            ctx = retrieveContext('canvas-node-5'); if(ctx) { executeBaseFill(ctx, '#D1F2EB', '#A3E4D7'); renderTextIndicator(ctx, "Sun: Gateway of India Arch 🏛️"); }
+            ctx = retrieveContext('canvas-node-6'); if(ctx) { executeBaseFill(ctx, '#FADBD8', '#F5B7B1'); renderTextIndicator(ctx, "Sun: Haas Reunion Dinner 🥘"); }
+            ctx = retrieveContext('canvas-node-7'); if(ctx) { executeBaseFill(ctx, '#E5E7E9', '#BDC3C7'); renderTextIndicator(ctx, "Mon: Train Terminus Vaults"); }
+            ctx = retrieveContext('canvas-node-8'); if(ctx) { executeBaseFill(ctx, '#FCF9F2', '#E8E1D7'); renderTextIndicator(ctx, "Mon: Dinner with Saloni & Jinal"); }
+            ctx = retrieveContext('canvas-node-9'); if(ctx) { executeBaseFill(ctx, '#D5F5E3', '#A9DFBF'); renderTextIndicator(ctx, "Tue: Highway Transit Projections"); }
+            ctx = retrieveContext('canvas-node-10'); if(ctx) { executeBaseFill(ctx, '#EBF5FB', '#AED6F1'); renderTextIndicator(ctx, "Tue: Dharampur Ashram Oasis 🌳"); }
+            ctx = retrieveContext('canvas-node-11'); if(ctx) { executeBaseFill(ctx, '#FEF9E7', '#F5CBA7'); renderTextIndicator(ctx, "Wed: SRLC Free Hospital Audit"); }
+            ctx = retrieveContext('canvas-node-12'); if(ctx) { executeBaseFill(ctx, '#EBDEF0', '#D7BDE2'); renderTextIndicator(ctx, "Wed: Immersive Aerial Yoga 🧘"); }
+            ctx = retrieveContext('canvas-node-13'); if(ctx) { executeBaseFill(ctx, '#F6DDCC', '#EDBB99'); renderTextIndicator(ctx, "Wed: White Marble Jain Temple"); }
+            ctx = retrieveContext('canvas-node-14'); if(ctx) { executeBaseFill(ctx, '#EAFAF1', '#D5F5E3'); renderTextIndicator(ctx, "Thu: Vocational Support Center"); }
+            ctx = retrieveContext('canvas-node-15'); if(ctx) { executeBaseFill(ctx, '#FFF5EE', '#F5DEB3'); renderTextIndicator(ctx, "Thu: IT Services Infrastructure"); }
+            ctx = retrieveContext('canvas-node-16'); if(ctx) { executeBaseFill(ctx, '#7A1E31', '#C5A059'); renderTextIndicator(ctx, "Thu: JMD Construction Framework"); }
+            ctx = retrieveContext('canvas-node-17'); if(ctx) { executeBaseFill(ctx, '#EAECEE', '#D5D8DC'); renderTextIndicator(ctx, "Weekend: New Delhi Historic Sights"); }
+            ctx = retrieveContext('canvas-node-18'); if(ctx) { executeBaseFill(ctx, '#FDEDEC', '#FADBD8'); renderTextIndicator(ctx, "Weekend: Lodhi Garden/Red Fort Logs"); }
+            ctx = retrieveContext('canvas-node-19'); if(ctx) { executeBaseFill(ctx, '#FEF9E7', '#FCF3CF'); renderTextIndicator(ctx, "Weekend: Taj Mahal Heritage Survey"); }
+            ctx = retrieveContext('canvas-node-20'); if(ctx) { executeBaseFill(ctx, '#F5EEF8', '#EBDEF0'); renderTextIndicator(ctx, "Weekend: Agra Fort Scale Systems"); }
+            ctx = retrieveContext('canvas-node-21'); if(ctx) { executeBaseFill(ctx, '#FBEEE6', '#F5CBA7'); renderTextIndicator(ctx, "Weekend: Butter Chicken Benchmarks"); }
+            ctx = retrieveContext('canvas-node-22'); if(ctx) { executeBaseFill(ctx, '#EAF2F8', '#D4E6F1'); renderTextIndicator(ctx, "Mon: Airport Gate Terminal Laptop Grid"); }
+            ctx = retrieveContext('canvas-node-23'); if(ctx) { executeBaseFill(ctx, '#FDF2E9', '#FADBD8'); renderTextIndicator(ctx, "Mon: Bumpy Road Excel Formulations"); }
+            ctx = retrieveContext('canvas-node-24'); if(ctx) { executeBaseFill(ctx, '#EAFAF1', '#D5F5E3'); renderTextIndicator(ctx, "Tue: Faction Allocation Schemes"); }
+            ctx = retrieveContext('canvas-node-25'); if(ctx) { executeBaseFill(ctx, '#EBF5FB', '#AED6F1'); renderTextIndicator(ctx, "Tue: Ashram Registration Tracing"); }
+            ctx = retrieveContext('canvas-node-26'); if(ctx) { executeBaseFill(ctx, '#FCF3CF', '#F9E79F'); renderTextIndicator(ctx, "Tue: Vet Higher Education Comps"); }
+            ctx = retrieveContext('canvas-node-27'); if(ctx) { executeBaseFill(ctx, '#7A1E31', '#FCF9F2'); renderTextIndicator(ctx, "Tue: Web Dashboard Wireframes"); }
+            ctx = retrieveContext('canvas-node-28'); if(ctx) { executeBaseFill(ctx, '#FDEDEC', '#FADBD8'); renderTextIndicator(ctx, "Wed: Ahimsa Center Pricing Nodes"); }
+            ctx = retrieveContext('canvas-node-29'); if(ctx) { executeBaseFill(ctx, '#F4ECF7', '#D7BDE2'); renderTextIndicator(ctx, "Wed: Mumbai Vet Manoch Bhai Sync"); }
+            ctx = retrieveContext('canvas-node-30'); if(ctx) { executeBaseFill(ctx, '#1A1C20', '#7A1E31'); renderTextIndicator(ctx, "Wed: Crystal Bowl Sound Bath Audits"); }
+            ctx = retrieveContext('canvas-node-31'); if(ctx) { executeBaseFill(ctx, '#E8F8F5', '#A3E4D7'); renderTextIndicator(ctx, "Wed: Meditation Room Stillness"); }
+            ctx = retrieveContext('canvas-node-32'); if(ctx) { executeBaseFill(ctx, '#FFFFFF', '#FCF9F2'); renderTextIndicator(ctx, "Thu: Presenting to Dharmeshbhai 💻"); }
+            ctx = retrieveContext('canvas-node-33'); if(ctx) { executeBaseFill(ctx, '#FFE4C4', '#F5DEB3'); renderTextIndicator(ctx, "Thu: Shaking Hands with Pujya Gurudevshri"); }
+            ctx = retrieveContext('canvas-node-34'); if(ctx) { executeBaseFill(ctx, '#7A1E31', '#C5A059'); renderTextIndicator(ctx, "Thu: Board Validation Portrait 📸"); }
+        }
+
+        window.onload = function() {
+            buildDynamicBaselineSketches();
+        }
+    </script>
+
+</body></html>
